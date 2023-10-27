@@ -2,25 +2,25 @@
 
 var data = [
    {
-    name: 'atom-beautify',
-    description: 'The atom-beautify package will clean up your cide,and make it more readable.',
-    author: 'Glavin001',
-    url: 'https://atom.io/packages/atom-beautify',
-    downloads: 4228040, 
-    stars: 4541,
-    price: 6.75,
-    selector: 'p1',
-   },
-   {
     name: 'emmet',
     description: 'Emmet is the number one code snippet tool.',
     author: 'emmetio',
     url: 'https://atom.io/packages/emmet',
-    downloads: 1662209, 
+    downloads: 16992209,
     stars: 2534,
     price: 10.50 ,
+    selector: 'p1',
+   },
+   {
+    name: 'atom-beautify',
+    description: 'The atom-beautify package will clean up your cide,and make it more readable.',
+    author: 'Glavin001',
+    url: 'https://atom.io/packages/atom-beautify',
+    downloads:4228040, 
+    stars: 4541,
+    price: 6.75,
     selector: 'p2',
-   } 
+   }
 ];
 
 function Package(data){
@@ -63,7 +63,7 @@ var WritePackageInfo = function (package){
     authEl.textContent = package.author;
     downloadEl.textContent = package.getFormattedDownloads();
     starsEl.textContent = package.getFormattedStars();
-}
+};
 
 dateEl = getEl('date');
 dateEl.textContent = getTodaysDate();
