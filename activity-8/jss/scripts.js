@@ -50,3 +50,4 @@ newButton.addEventListener('click', openModal);
 cancelButton.addEventListener('click',closeModal);
 saveButton.addEventListener('click', saveContent);
 });
+
